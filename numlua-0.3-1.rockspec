@@ -2,9 +2,7 @@ package = "NumLua"
 version = "0.3-1"
 
 source = {
-  url = "https://github.com/downloads/carvalho/numlua/numlua-0.3-1.tar.gz",
-  md5 = "abc29945daadd1499c7596ebbfb0f88a",
-  dir = "numlua-0.3"
+  url = "git+https://github.com/achengli/numlua",
 }
 
 description = {
