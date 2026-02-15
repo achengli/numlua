@@ -246,6 +246,9 @@ end
 matrix = setmetatable(matrix, {
   __call = function(_, ...)
     return type(select(1, ...)) == "table" and fromtable(...) or new(...)
+  end,
+  __tostring = function(self)
+      return self:pretty()
   end
 })
 
