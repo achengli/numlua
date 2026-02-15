@@ -16,6 +16,10 @@ local unpack, assert, ipairs = unpack, assert, ipairs
 local setmetatable, select = setmetatable, select
 local floor, max = math.floor, math.max
 
+if not unpack then
+    unpack = table.unpack
+end
+
 local function checkmatrix (m)
   local t = type(m)
   assert(t == "matrix", "matrix expected, got " .. t)
